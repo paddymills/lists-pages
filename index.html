@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/svg+xml" href="/icon.svg" /> -->
+    <title>so many lists</title>
+    <script defer src="https://unpkg.com/htmx.org@1.x.x/dist/htmx.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body>
+    <div x-data="{ emote: '❤️' }">
+      <h1 x-text="`I ${emote} Alpine`"></h1>
+      <h2 x-data="{ text: 'lists go here' }" x-text="text"></h2>
+      <button x-on:click="emote = 'x'">change icon</button>
+      <ul x-data="{ vals: ['a','b', 'c'] }">
+        <template x-for="val in vals">
+          <li x-text="val"></li>
+        </template>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 
-export function onRequestGet(context) {
+export function onRequestGet(context: EventContext): Response {
   return new Response(JSON.stringify(
     [
       { "id": 1, "text": "First" },

@@ -1,5 +1,7 @@
 
-export function onRequestGet(context: EventContext): Response {
+import { type Context } from "../types";
+
+export function onRequestGet(context: Context): Response {
   return new Response(JSON.stringify(
     [
       { "id": 1, "text": "First" },

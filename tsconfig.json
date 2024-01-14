@@ -16,6 +16,7 @@
     "isolatedModules": true
   },
   "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "exclued": [ "functions/**/*" ],
   "references": [{ "path": "./tsconfig.node.json" }],
   "types": [ "@cloudflare/workers-types" ]
 }

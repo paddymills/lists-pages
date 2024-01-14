@@ -2,21 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/todo.svg" />
-    <title>so many lists</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte + TS</title>
   </head>
   <body>
-    <div class="todos">
-      <h1>Todos</h1>
-      <ul class="todolist" x-data="{ todos: [] }" x-init="todos = await (await fetch('/todo/all')).json()">
-        <template x-for="todo in todos">
-          <li class="todo" x-text="todo.text"></li>
-        </template>
-      </ul>
-    </div>
-    <script type="module" src="/src/todo.ts"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

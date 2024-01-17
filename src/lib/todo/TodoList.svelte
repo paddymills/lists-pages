@@ -39,6 +39,8 @@
 <main>
   <h1>Todo list</h1>
 
+  <!-- TODO: description -->
+  <!-- TODO: edit/delete buttons -->
   <ul>
     {#each todoValues as todo}
       <Todo item={todo} />

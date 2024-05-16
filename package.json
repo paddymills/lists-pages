@@ -1,27 +1,20 @@
 {
-  "name": "lists-pages",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "too-many-lists",
+  "version": "0.1.0",
+  "description": "Lists managing app",
   "scripts": {
-    "dev": "wrangler pages dev -- vite",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "serve": "vite preview"
   },
+  "license": "MIT",
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@tsconfig/svelte": "^5.0.2",
-    "sass": "^1.69.7",
-    "svelte": "^4.2.8",
-    "svelte-check": "^3.6.2",
-    "svelte-preprocess": "^5.1.3",
-    "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "solid-devtools": "^0.29.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-solid": "^2.8.2"
   },
   "dependencies": {
-    "@cloudflare/pages-plugin-cloudflare-access": "^1.0.3",
-    "@cloudflare/workers-types": "^4.20231218.0"
+    "solid-js": "^1.8.11"
   }
 }

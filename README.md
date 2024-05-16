@@ -1,6 +1,6 @@
 # too many lists
 
-built on [Cloudflare pages](https://developers.cloudflare.com/pages/) + [Svelte](https://svelte.dev/)
+built on [Cloudflare pages](https://developers.cloudflare.com/pages/) + [Solid](https://solidjs.com)
 
 ## dev
 ```

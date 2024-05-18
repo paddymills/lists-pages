@@ -5,5 +5,6 @@ mkShell {
     nodejs_22
     fzf
     ripgrep
+    lsof
   ];
 }
